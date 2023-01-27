@@ -1,0 +1,40 @@
+.cover {
+  background-color: rgb(46, 36, 34);
+  color: #9c867e;
+  padding: 15px;
+
+  &Columns {
+    list-style: none;
+    display: inline-grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+    width: 100%;
+
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  li {
+    p {
+      padding-bottom: 10px;
+    }
+
+    .bottomText {
+      padding-top: 17px;
+      padding-bottom: 15px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      :hover {
+        color: rgb(240, 232, 225);
+      }
+      a {
+        font-size: 20px;
+        text-decoration: none;
+      }
+    }
+  }
+}

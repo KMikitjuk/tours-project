@@ -1,0 +1,25 @@
+.content {
+  background-image: radial-gradient(
+      60.69% 72.72% at 70.28% 32.61%,
+      rgba(46, 36, 34, 0.5) 0px,
+      rgb(46, 36, 34) 100%
+    ),
+    url(https://bonifique.life/static/img/bg.30bb4403.jpg);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.contentCover {
+  display: flex;
+  padding: 9rem 0 10rem 3rem;
+  width: 100%;
+}
+
+.projectIdea {
+  font-family: 'Gentium Book Plus', serif;
+  font-size: 23px;
+  color: rgb(240, 232, 225);
+
+  padding: 0rem 37% 1rem 0rem;
+  width: 93%;
+}

@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: center;
+  & a {
+    color: red
+  }
+}

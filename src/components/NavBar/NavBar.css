@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gentium Book Plus', serif;
+  font-size: 23px;
+}
+
+.nav-links {
+  color: rgb(251, 239, 239);
+  text-decoration: none;
+  /* padding: 0.5rem 1rem; */
+  padding: 1rem 1rem;
+}
+
+.nav-links:hover {
+  /* background-color: rgb(100, 89, 73); */
+  /* background-color: rgb(251, 239, 239); */
+  /* background-color: rgb(240, 232, 225); */
+  /* color: rgb(56, 47, 40); */
+  color: white;
+  font-size: 23px;
+  border-bottom: 3px solid #9c867e;
+  transition: all 0.2s ease-in;
+}
+
+/* .countContainer {
+  position: absolute;
+  background-color: rgb(251, 239, 239);
+  transform: translate(98px, -90%);
+  border-radius: 5px;
+  width: 15px;
+  height: 30px;
+} */
+
+.NavbarItems {
+  /* background: rgb(59, 51, 39); */
+
+  /* мой предыдущий вариант */
+  /* background: rgb(56, 47, 40); */
+
+  /* вариант сайта */
+  /* background: rgb(31, 21, 21); */
+
+  /* #1 Схож с сайтом, но светлее */
+  /* background: rgb(54, 44, 42); */
+
+  /* #2 чуть темнее #1*/
+  background: rgb(46, 36, 34);
+
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  padding-left: 20px;
+}
+
+.navbar-logo {
+  color: rgb(251, 239, 239);
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.navbar-logo:hover {
+  /* background-color: rgb(251, 239, 239); */
+  /* background-color: rgb(240, 232, 225); */
+  /* color: rgb(56, 47, 40); */
+  color: white;
+  /* border-radius: 2px; */
+  padding: 10px;
+  transition: all 0.2s ease-out;
+}
+
+.menu-logo {
+  padding-left: 20px;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 1rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 830px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .menu-logo {
+    position: relative;
+    right: 12%;
+    padding-right: 20px;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    left: 43%;
+    top: 10%;
+    color: rgb(251, 239, 239);
+    cursor: pointer;
+  }
+
+  .navbar-logo:hover {
+    background-color: rgb(240, 232, 225);
+    padding: 10px;
+    transition: all 0.2s ease-out;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: -140px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    top: -63px;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-links {
+    background-color: rgb(59, 51, 39);
+    opacity: 0.95;
+    padding: 1rem;
+    /* padding: 15px; */
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: rgb(100, 89, 73);
+    border-radius: 0;
+  }
+
+  .countContainer {
+    position: absolute;
+    background-color: rgb(251, 239, 239);
+    right: 55%;
+    bottom: -3%;
+    border-radius: 5px;
+    width: 15px;
+    height: 30px;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 33px;
+    right: 60px;
+    z-index: 2;
+    /* top: 0;
+    right: 0;
+    transform: translate(-170%, 90%); */
+  }
+}
